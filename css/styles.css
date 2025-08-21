@@ -516,3 +516,17 @@ a {
     fill: #f4f4fd;
 
 }
+
+.footer-email-input {
+    width: 453px;
+    height: 80px;
+    margin-left: 80px;
+}
+
+.footer-input-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
