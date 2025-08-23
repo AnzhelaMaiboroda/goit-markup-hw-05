@@ -606,12 +606,13 @@ a {
     transform: translate(-50%, -100%);
 }
 
-
+.modal-btn {}
 
 .modal-button {
-    position: absolute;
+    position: relative;
     margin-top: 24px;
     margin-right: 24px;
+    margin-left: 360px;
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -682,6 +683,18 @@ a {
     border-radius: 4px;
     width: 360px;
     height: 40px;
+}
+
+.modal-icon-persons {
+    position: absolute;
+    padding: 3px 0px;
+    width: 18px;
+    height: 24px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 4px;
 }
 
 .form-modal-phone {
