@@ -606,15 +606,19 @@ a {
     transform: translate(-50%, -100%);
 }
 
+
+
 .modal-button {
+    position: absolute;
     margin-top: 24px;
     margin-right: 24px;
     width: 24px;
     height: 24px;
-    border-radius: 100%;
+    border-radius: 50%;
     background-color: #e7e9fc;
     stroke-width: 1px;
     stroke: rgba(0, 0, 0, 0.1);
+
 
 }
 
@@ -626,6 +630,14 @@ a {
     background-color: #404bbf;
 }
 
+.modal-icon-close:hover {
+    fill: #fff;
+}
+
+.modal-icon-close:focus {
+    fill: #fff;
+}
+
 .modal-title {
     font-weight: 500;
     font-size: 16px;
@@ -634,15 +646,26 @@ a {
     text-align: center;
     color: #2e2f42;
     margin-top: 24px;
+    margin-bottom: 16px;
 }
 
 /* form-modal */
 
-.form-modal-name,
-form-modal-phone,
-form-modal-email {
+.modal-form {
+    padding-right: 24px;
+    padding-left: 24px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 4px;
+}
+
+.form-modal-name {
     width: 360px;
     height: 58px;
+    margin-bottom: 8px;
 }
 
 .form-modal-ladel {
@@ -653,9 +676,69 @@ form-modal-email {
     color: #8e8f99;
 }
 
+.modal-input-name {
+    margin-top: 4px;
+    border: 1px solid #4d5ae5;
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+}
+
+.form-modal-phone {
+    width: 360px;
+    height: 58px;
+    margin-bottom: 8px;
+}
+
+.modal-input-phone {
+    margin-top: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+}
+
+.form-modal-email {
+    width: 360px;
+    height: 58px;
+    margin-bottom: 8px;
+}
+
+.modal-input-email {
+    margin-top: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+}
 
 
 
+
+
+
+.form-modal-comment {
+    width: 360px;
+    height: 138px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.form-comment-text {
+    margin-top: 4px;
+    padding-top: 8px;
+    padding-left: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    width: 360px;
+    height: 120px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+}
 
 .form-modal-btn {
     font-weight: 500;
@@ -675,14 +758,9 @@ form-modal-email {
 }
 
 
-/* .modal-button-svg {
-    background-color: #2e2f42;
-}
-
-.modal-button-svg:hover {
-    background-color: #fff;
-}
-
-.modal-button-svg:focus {
-    background-color: #fff;
+/* .form-modal-ladel {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    width: 360px;
+    height: 120px;
 } */
